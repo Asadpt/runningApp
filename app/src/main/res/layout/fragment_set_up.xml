@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".runningApp.ui.fragments.SetUpFragment">
+
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Continue"/>
+
+      <LinearLayout
+          android:layout_margin="20sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+
+
+          <EditText
+              android:layout_marginBottom="20sp"
+                android:hint="name"
+              android:textSize="20sp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eNAme"/>
+
+
+          <EditText
+              android:hint="weight"
+              android:textSize="20sp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eWeight"/>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

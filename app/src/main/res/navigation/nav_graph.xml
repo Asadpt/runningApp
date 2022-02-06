@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/setUpFragment">
+
+    <action android:id="@+id/action_global_trackingfragment"
+        app:destination="@+id/trackiingFragamnt"
+        app:launchSingleTop="true"/>
+
+    <fragment
+        android:id="@+id/runFragment"
+        android:name="com.example.study.runningApp.ui.fragments.RunFragment"
+        android:label="fragment_run"
+        tools:layout="@layout/fragment_run" >
+        <action
+            android:id="@+id/action_runFragment_to_trackiingFragamnt"
+            app:destination="@id/trackiingFragamnt" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpFragment"
+        android:name="com.example.study.runningApp.ui.fragments.SetUpFragment"
+        android:label="fragment_set_up"
+        tools:layout="@layout/fragment_set_up" >
+        <action
+            android:id="@+id/action_setUpFragment_to_runFragment"
+            app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staticsFragment"
+        android:name="com.example.study.runningApp.ui.fragments.StaticsFragment"
+        android:label="fragment_statics"
+        tools:layout="@layout/fragment_statics" />
+    <fragment
+        android:id="@+id/trackiingFragamnt"
+        android:name="com.example.study.runningApp.ui.fragments.TrackiingFragamnt"
+        android:label="fragment_trackiing_fragamnt"
+        tools:layout="@layout/fragment_trackiing_fragamnt" >
+        <action
+            android:id="@+id/action_trackiingFragamnt_to_runFragment"
+            app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.study.runningApp.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

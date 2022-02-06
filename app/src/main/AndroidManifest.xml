@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.study">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".mvvmshoppingitem.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Study"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".flowphilipp.ACT_FlowPhilipp"
+            android:exported="false" />
+        <activity
+            android:name=".coroutinephilip.ACT_CourotinePhilipp"
+            android:exported="false" />
+        <activity
+            android:name=".runningApp.ui.MainActivityRunning"
+            android:exported="false" />
+        <activity
+            android:name=".mvvmshoppingitem.ShoppingHiltActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvmshoppingitem.ShoppingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ACT_Coroutines"
+            android:exported="false" />
+        <activity
+            android:name=".ACT_DataBinding"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".runningApp.services.TrackingServises"
+            android:foregroundServiceType="location" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAuLpj-EIJO7RbGquS2s3qcsoRuQs87FpI" />
+    </application>
+
+</manifest>

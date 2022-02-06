@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+        <import type="com.example.study.User"/>
+        <import type="android.view.View"/>
+
+        <variable
+            name="user"
+            type="User" />
+
+        <variable
+            name="myViewModel"
+            type="com.example.study.DataBindingViewModel" />
+
+
+
+
+    </data>
+
+
+
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ACT_DataBinding">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/nameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@{myViewModel.name}"/>
+
+        <EditText
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myEditText"/>
+
+        <include
+            app:myUser ="@{user}"
+            layout="@layout/content_layout"/>
+        
+        <ImageView
+            android:layout_marginBottom="25dp"
+            load_image="@{user.imageUrl}"
+            android:layout_marginTop="15dp"
+            android:id="@+id/myImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <ImageView
+            load_second_image="@{user.imageUrl1}"
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:id="@+id/myNewImageView"/>
+
+        <ImageView
+            load_third_image="@{user.imageUrl2}"
+            android:layout_marginTop="15dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/myAnotherImage"/>
+
+
+
+    </LinearLayout>
+
+</layout>
+
+

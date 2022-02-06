@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/screenShot"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginStart="15dp"
+            android:text="tot dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalDistance"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginStart="15dp"
+            android:text="tot dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calorieBurned"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginStart="15dp"
+            android:text="tot dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/averageSpeed"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
